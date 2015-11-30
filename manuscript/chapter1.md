@@ -42,3 +42,10 @@ A decorator is a language feature added to ES2015 by TypeScript
 Classes were added to the ES2015 specification as syntactic sugar over
 prototypal inheritance. They do not work the same way as classes in many other
 popular object oriented languages.
+
+### transpilation
+
+Because it is inefficient to interpret TS directly in the browser, we will use
+the TS compiler. By default, [the compiler outputs ES3 compatible JS](https://github.com/Microsoft/TypeScript/wiki/Compiler-Options).
+However, this does not mean that the compiled A2 app will run on ES3 compatible
+browsers (e.g. IE8/9).
